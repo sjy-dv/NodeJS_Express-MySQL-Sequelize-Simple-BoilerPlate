@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const isAuth = require('../middleware/isAuth');
-const { userController : controller } = require('../controllers/Controller');
+const { userController : controller } = require('../controllers');
 const isRefresh = require('../middleware/isRefresh');
 
 router.post('/join', controller.UserJoin);

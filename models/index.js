@@ -26,10 +26,9 @@ const sequelize = new Sequelize(
 
 const db = {};
 
-db.Sequelize = Sequelize;
 db.Op = Op;
 db.sequelize = sequelize;
 
-db.member = require('./member.js')(sequelize, Sequelize, DataTypes);
+db.member = require('./member.js')(sequelize, DataTypes);
 
 module.exports = db;
